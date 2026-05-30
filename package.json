@@ -1,7 +1,11 @@
 {
-  "name": "openclaw",
+  "name": "hitmanclaw-build",
   "module": "index.ts",
   "type": "module",
+  "private":"true",
+  "bin": {
+    "hitmanclaw-build":"./index.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
