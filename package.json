@@ -2,9 +2,9 @@
   "name": "hitmanclaw-build",
   "module": "index.ts",
   "type": "module",
-  "private":"true",
+  "private": "true",
   "bin": {
-    "hitmanclaw-build":"./index.ts"
+    "hitmanclaw-build": "./index.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -16,6 +16,7 @@
     "@clack/core": "^1.3.1",
     "@clack/prompts": "^1.4.0",
     "@types/node": "^25.9.1",
+    "chalk": "^5.6.2",
     "commander": "^14.0.3",
     "figlet": "^1.11.0"
   }
