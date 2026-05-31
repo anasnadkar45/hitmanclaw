@@ -1,8 +1,6 @@
 import {select , isCancel} from "@clack/prompts";
 import chalk from "chalk"
 import figlet from "figlet";
-import { runCliMode } from "../modes/cli";
-import { runTelegramMode } from "../modes/telegram";
 
 const BANNER_FONT = 'ANSI Shadow';
 const SHADOW = chalk.hex('#5b4d9e');
@@ -29,9 +27,9 @@ function printBannerWithShadow(ascii: string) {
 export async function runWakeup() {
     let ascii:string;
     try {
-        ascii = figlet.textSync("chaicodeclaw" , {font:BANNER_FONT})
+        ascii = figlet.textSync("hitmanclaw" , {font:BANNER_FONT})
     } catch (error) {
-        ascii = figlet.textSync("chaicodeclaw" , {font:"Standard"})
+        ascii = figlet.textSync("hitmanclaw" , {font:"Standard"})
     }
 
     printBannerWithShadow(ascii)
@@ -51,9 +49,12 @@ export async function runWakeup() {
     }
 
     if(mode === "cli"){
-        await runCliMode()
+        // await runCliMode()
+        console.log(chalk.green("CLI mode is not implemented yet. Stay tuned!"))
+
     }
     else if(mode === "telegram"){
-        await runTelegramMode()
+        // await runTelegramMode()
+        console.log(chalk.green("Telegram mode is not implemented yet. Stay tuned!"))
     }
 }
