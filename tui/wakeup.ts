@@ -1,6 +1,7 @@
 import {select , isCancel} from "@clack/prompts";
 import chalk from "chalk"
 import figlet from "figlet";
+import { runCliMode } from "../modes/cli";
 
 const BANNER_FONT = 'ANSI Shadow';
 const SHADOW = chalk.hex('#5b4d9e');
@@ -49,9 +50,7 @@ export async function runWakeup() {
     }
 
     if(mode === "cli"){
-        // await runCliMode()
-        console.log(chalk.green("CLI mode is not implemented yet. Stay tuned!"))
-
+        await runCliMode()
     }
     else if(mode === "telegram"){
         // await runTelegramMode()
